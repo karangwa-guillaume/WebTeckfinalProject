@@ -1,0 +1,104 @@
+/* ManageServices.css */
+.manage-services-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+  }
+  
+  .manage-services-container h2 {
+    text-align: center;
+    color: #2c3e50;
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .add-service-form {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+    justify-content: center;
+  }
+  
+  .add-service-form input {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    transition: border-color 0.3s ease;
+  }
+  
+  .add-service-form input:focus {
+    border-color: #1abc9c;
+    box-shadow: 0 0 5px rgba(26, 188, 156, 0.5);
+  }
+  
+  .add-service-form button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #1abc9c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .add-service-form button:hover {
+    background-color: #16a085;
+  }
+  
+  .services-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .services-table th,
+  .services-table td {
+    text-align: left;
+    padding: 10px;
+    border: 1px solid #ddd;
+  }
+  
+  .services-table th {
+    background-color: #34495e;
+    color: white;
+  }
+  
+  .services-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  .services-table tr:hover {
+    background-color: #f1f1f1;
+  }
+  
+  .services-table button {
+    margin: 0 5px;
+    padding: 5px 10px;
+    font-size: 0.9rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .services-table button:first-child {
+    background-color: #3498db;
+    color: white;
+  }
+  
+  .services-table button:first-child:hover {
+    background-color: #2980b9;
+  }
+  
+  .services-table button:last-child {
+    background-color: #e74c3c;
+    color: white;
+  }
+  
+  .services-table button:last-child:hover {
+    background-color: #c0392b;
+  }
+  

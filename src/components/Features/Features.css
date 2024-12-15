@@ -1,0 +1,84 @@
+/* Features Section */
+.features {
+    padding: 60px 30px;
+    background-image: url('/assets/hero3.jpeg'); /* Replace with your background image path */
+    background-size: cover; /* Ensure the image covers the entire section */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent image repetition */
+    text-align: center;
+    color: white; /* White text for better contrast */
+    position: relative; /* Position for overlay */
+    overflow: hidden; /* Ensure no overflow issues */
+  }
+  
+  /* Overlay for better text visibility */
+  .features::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent dark overlay */
+    z-index: 1; /* Place overlay below content */
+  }
+  
+  .features h2 {
+    position: relative; /* Ensure content is above overlay */
+    font-size: 2.5rem;
+    color: #ffcc00; /* Gold color for the heading */
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    z-index: 2;
+  }
+  
+  .features-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap; /* Allow wrapping for smaller screens */
+    position: relative; /* Ensure content is above overlay */
+    z-index: 2;
+  }
+  
+  .feature-card {
+    background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white background */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    width: 250px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .feature-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4); /* Darker shadow on hover */
+  }
+  
+  .feature-icon {
+    font-size: 3rem;
+    color: #ffcc00; /* Highlight icons */
+    margin-bottom: 20px;
+  }
+  
+  .feature-card h3 {
+    font-size: 1.5rem;
+    color: #49557e; /* Dark blue for headings */
+    margin-bottom: 15px;
+  }
+  
+  .feature-card p {
+    font-size: 1rem;
+    color: #333; /* Dark text for readability */
+    line-height: 1.6;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .feature-card {
+      width: 100%;
+      max-width: 300px;
+    }
+  }
+  

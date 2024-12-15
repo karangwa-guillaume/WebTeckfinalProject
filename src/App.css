@@ -1,0 +1,37 @@
+/* Global Styles for Sections */
+section {
+    position: relative; /* Stack sections correctly */
+    z-index: 0; /* Default stacking order */
+    overflow: visible; /* Prevent clipping */
+    width: 100%; /* Full width */
+    min-height: 100vh; /* Full screen height */
+    padding: 60px 20px; /* Add spacing around content */
+    box-sizing: border-box; /* Include padding in width/height */
+  }
+  
+  /* Alternate Background Colors for Sections */
+  section:nth-child(odd) {
+    background-color: #f0f0f0; /* Light gray */
+  }
+  
+  section:nth-child(even) {
+    background-color: #49557e; /* Dark blue */
+    color: white; /* Adjust text color for contrast */
+  }
+  
+  /* Smooth Scrolling */
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  /* Navbar (if included in global styles) */
+  .navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: #49557e;
+    color: white;
+  }
+  

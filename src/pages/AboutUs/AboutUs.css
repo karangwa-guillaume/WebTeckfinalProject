@@ -1,0 +1,88 @@
+/* AboutUs.css */
+.about-us-page {
+    background-color: #f8f9fa;
+    padding: 50px 20px;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .about-us-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  h1 {
+    font-size: 3rem;
+    color: #2c3e50;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+  }
+  
+  .about-us-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+    flex-wrap: wrap;
+  }
+  
+  .about-us-section {
+    flex: 1;
+    margin: 10px;
+    text-align: left;
+  }
+  
+  .about-us-section p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: #2c3e50;
+  }
+  
+  .about-us-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .about-us-team {
+    margin-top: 50px;
+  }
+  
+  h2 {
+    font-size: 2rem;
+    color: #34495e;
+    margin-bottom: 20px;
+  }
+  
+  .team-members {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+  }
+  
+  .team-member {
+    text-align: center;
+    margin: 10px;
+  }
+  
+  .team-member img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    margin-bottom: 10px;
+  }
+  
+  .team-member p {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #2c3e50;
+  }
+  
+  .team-member span {
+    font-size: 1rem;
+    color: #7f8c8d;
+  }
+  

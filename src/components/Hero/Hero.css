@@ -1,0 +1,162 @@
+/* Hero Section */
+.hero {
+    position: relative; /* To position overlay */
+    background-image: url('/assets/full wash.jpeg'); /* Path to your image */
+    background-size: cover; /* Ensure the image covers the entire section */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent repetition */
+    height: calc(100vh - 80px); /* Adjust height to account for navbar */
+    width: 100vw; /* Full screen width */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    overflow: hidden;
+    animation: backgroundPan 10s linear infinite; /* Add slow background animation */
+    margin-top: 80px; /* Prevent overlap with navbar */
+  }
+  
+  /* Background animation */
+  @keyframes backgroundPan {
+    0% {
+      background-position: 0% 50%;
+    }
+    100% {
+      background-position: 100% 50%;
+    }
+  }
+  
+  /* Overlay for better text visibility */
+  .hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.25); /* Reduced opacity for better image visibility */
+    z-index: 1; /* Place it below text */
+  }
+  
+  /* Hero Content */
+  .hero-content {
+    position: relative;
+    z-index: 2; /* Ensure content is above overlay */
+    width: 90%; /* Content width adjustment */
+    max-width: 1200px; /* Limit content width on larger screens */
+    animation: fadeIn 2s ease-in-out, slideUp 2s ease-in-out; /* Add fade and slide animations */
+  }
+  
+  .hero-content h1 {
+    font-size: 4rem; /* Large heading */
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #ffcc00;
+    animation: bounceIn 3s infinite alternate; /* Add bounce animation */
+  }
+  
+  .hero-content p {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+    line-height: 1.8;
+    color: #ffffff;
+    animation: slideIn 3s ease-in-out; /* Slide-in animation for paragraph */
+  }
+  
+  /* Buttons */
+  .hero-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    animation: fadeIn 3s ease-in-out; /* Buttons fade-in */
+  }
+  
+  .btn-primary {
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 50px;
+    background-color: #ffcc00;
+    color: #49557e;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .btn-primary:hover {
+    background-color: #e6b800;
+    color: white;
+    transform: scale(1.1);
+  }
+  
+  .btn-secondary {
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    border: 2px solid #ffcc00;
+    border-radius: 50px;
+    background-color: transparent;
+    color: #ffcc00;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .btn-secondary:hover {
+    background-color: #ffcc00;
+    color: #49557e;
+    transform: scale(1.1);
+  }
+  
+  /* Animations */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slideIn {
+    from {
+      transform: translateX(-100%);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
+  
+  @keyframes slideUp {
+    from {
+      transform: translateY(100%);
+    }
+    to {
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes bounceIn {
+    from {
+      transform: scale(1);
+    }
+    to {
+      transform: scale(1.1);
+    }
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .hero-content h1 {
+      font-size: 2.5rem; /* Adjust font size for smaller screens */
+    }
+  
+    .hero-content p {
+      font-size: 1rem; /* Adjust font size for smaller screens */
+    }
+  
+    .btn-primary,
+    .btn-secondary {
+      font-size: 1rem;
+      padding: 10px 20px; /* Adjust button size */
+    }
+  }
+  

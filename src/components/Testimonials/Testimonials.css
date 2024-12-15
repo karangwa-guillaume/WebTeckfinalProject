@@ -1,0 +1,68 @@
+/* Testimonials Section */
+.testimonials {
+  padding: 60px 30px;
+  background-color: #49557e; /* Dark blue background */
+  text-align: center;
+  color: white; /* Text color for contrast */
+}
+
+.testimonials h2 {
+  font-size: 2.5rem;
+  color: #ffcc00; /* Gold color for the heading */
+  margin-bottom: 40px;
+  text-transform: uppercase;
+}
+
+.testimonials-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap; /* Allow wrapping for smaller screens */
+}
+
+.testimonial-card {
+  background-color: #ffffff; /* White background for cards */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Enhanced shadow for cards */
+  overflow: hidden;
+  width: 300px;
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.testimonial-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4); /* Darker shadow on hover */
+}
+
+.testimonial-card img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
+  border: 3px solid #ffcc00; /* Gold border for profile pictures */
+}
+
+.testimonial-card p {
+  font-size: 1.1rem;
+  color: #333; /* Dark text for better readability */
+  margin-bottom: 15px;
+  line-height: 1.6;
+  font-style: italic;
+}
+
+.testimonial-card h3 {
+  font-size: 1.2rem;
+  color: #49557e; /* Dark blue for names */
+  font-weight: bold;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .testimonial-card {
+    width: 100%;
+    max-width: 300px;
+  }
+}
