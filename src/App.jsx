@@ -21,6 +21,9 @@ import GenerateReports from './pages/GenerateReports/GenerateReports';
 import PaymentPage from './pages/PaymentPage/Paymentpage';
 import AboutUs from './pages/AboutUs/AboutUs';
 import ContactUs from './pages/ContactUs/ContactUs';
+import ServiceDetails from './pages/ServiceDetails/ServiceDetails';
+import SearchResults from './pages/SearchResults/SearchResults';
+import Footer from './components/Footer/Footer';
 
 const App = () => {
   return (
@@ -32,10 +35,12 @@ const App = () => {
           {/* Public routes */}
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
+          <Route path='/search' element={<SearchResults/>}/>
 
           {/* Protected routes - Customer Dashboard */}
           <Route path="/customer-dashboard" element={<CustomerDashboard />} />
           <Route path='/Services'element={<ServicesPage/>}/>
+          <Route path="/services/:serviceId" element={<ServiceDetails />} />
 
           {/* Protected routes - Owner Dashboard */}
           <Route path="/owner-dashboard" element={<OwnerDashboard />} />
@@ -56,6 +61,7 @@ const App = () => {
           <Route path="*" element={<NotFoundPage />} />
         </Routes>
       </main>
+      <Footer/>
     </Router>
   );
 };

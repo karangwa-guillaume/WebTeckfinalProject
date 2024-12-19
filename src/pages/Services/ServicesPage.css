@@ -82,6 +82,14 @@ h2 {
   transform: scale(1.1);
 }
 
+.service-price {
+  font-size: 1.2rem;
+  color: #1abc9c; /* Highlight the price in a distinct color */
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+
 /* Service page background with gradient */
 .service-page::before {
   content: "";
@@ -93,6 +101,16 @@ h2 {
   background: linear-gradient(135deg, rgba(255, 204, 0, 0.6), rgba(73, 85, 126, 0.5)); /* Gradient background */
   z-index: -1;
 }
+
+/* Adjusted styles for service images */
+.service-item img {
+  width: 100%;
+  height: 180px; /* Maintain a consistent height for all images */
+  object-fit: cover; /* Ensure the image scales and crops appropriately */
+  border-radius: 12px; /* Rounded image corners for a modern look */
+  margin-bottom: 15px; /* Add spacing below the image */
+}
+
 
 /* Responsive Design */
 @media (max-width: 768px) {

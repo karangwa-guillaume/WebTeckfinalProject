@@ -1,0 +1,88 @@
+.service-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 20px;
+    background-image: url('/assets/about.jpeg'); /* Replace with your image path */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* min-height: 100vh; */
+    color: #333;
+    position: relative;
+    min-height: 100vh; /* Ensure full-page height */
+    font-family: 'Arial', sans-serif;
+  }
+
+  .service-price {
+    font-size: 1.5rem;
+    color: #1abc9c; /* Highlight the price in a distinct color */
+    font-weight: bold;
+    margin: 20px 0;
+  }
+  
+  
+  .service-details img {
+    width: 80%; /* Adjust width to fit within the container */
+    max-width: 600px; /* Limit the maximum width */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 15px; /* Add rounded corners */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Add a soft shadow */
+    margin-bottom: 30px; /* Spacing below the image */
+  }
+  
+  .service-details h2 {
+    font-size: 2.5rem; /* Larger heading */
+    font-weight: bold;
+    color: white; /* Dark blue for contrast */
+    margin-bottom: 20px;
+    text-transform: uppercase;
+  }
+  
+  .service-details p {
+    font-size: 1.2rem;
+    color: white; /* Muted blue for text */
+    line-height: 1.8; /* Improve readability */
+    max-width: 800px; /* Limit the text width */
+    text-align: center; /* Center the text */
+  }
+  
+  .back-button {
+    margin-top: 30px;
+    padding: 12px 30px;
+    font-size: 1.2rem;
+    color: white;
+    background-color: #ffcc00; /* Bright yellow for the button */
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .back-button:hover {
+    background-color: #e6b800; /* Slightly darker yellow on hover */
+    transform: scale(1.05); /* Slight zoom on hover */
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .service-details img {
+      width: 100%; /* Full width for smaller screens */
+    }
+  
+    .service-details h2 {
+      font-size: 2rem; /* Adjust heading size */
+    }
+  
+    .service-details p {
+      font-size: 1rem; /* Adjust text size */
+      padding: 0 10px; /* Add some padding for better readability */
+    }
+  
+    .back-button {
+      font-size: 1rem;
+      padding: 10px 25px;
+    }
+  }
+  

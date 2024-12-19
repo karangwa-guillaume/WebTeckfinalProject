@@ -40,7 +40,7 @@ body, html {
 
 .navbar-title {
   font-size: 1.5rem;
-  color: #ecf0f1;
+  color: #bdca0b;
 }
 
 /* Links Section */
@@ -51,13 +51,13 @@ body, html {
 
 .navbar-links a {
   text-decoration: none;
-  color: white;
+  color: rgb(181, 164, 12);
   font-size: 1rem;
   transition: color 0.3s ease;
 }
 
 .navbar-links a:hover {
-  color: #1abc9c;
+  color:white;
 }
 
 /* Right Section */
@@ -84,12 +84,12 @@ body, html {
 }
 
 .search-input:focus {
-  border-color: #1abc9c;
+  border-color: #c3e30c;
 }
 
 .search-button {
   padding: 8px 15px;
-  background-color: #1abc9c;
+  background-color: #11dba5;
   border: none;
   border-radius: 4px;
   color: white;

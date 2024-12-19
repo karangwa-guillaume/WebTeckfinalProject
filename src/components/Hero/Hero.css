@@ -1,7 +1,7 @@
 /* Hero Section */
 .hero {
     position: relative; /* To position overlay */
-    background-image: url('/assets/full wash.jpeg'); /* Path to your image */
+    background-image: url('/assets/booking.jpeg'); /* Path to your image */
     background-size: cover; /* Ensure the image covers the entire section */
     background-position: center; /* Center the image */
     background-repeat: no-repeat; /* Prevent repetition */
@@ -14,7 +14,7 @@
     color: white;
     overflow: hidden;
     animation: backgroundPan 10s linear infinite; /* Add slow background animation */
-    margin-top: 80px; /* Prevent overlap with navbar */
+    /* margin-top: 80px; Prevent overlap with navbar */
   }
   
   /* Background animation */

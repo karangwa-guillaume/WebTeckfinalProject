@@ -1,7 +1,10 @@
 import React from 'react';
 import './Services.css';
+import { useNavigate } from 'react-router-dom';
 
 const Services = () => {
+  const navigate = useNavigate();
+
   const services = [
     {
       id: 1,
@@ -23,6 +26,10 @@ const Services = () => {
     },
   ];
 
+  const handleLearnMore = (serviceId) => {
+    navigate(`/services/${serviceId}`);
+  };
+
   return (
     <section className="services">
       <h2>Our Services</h2>
@@ -32,7 +39,10 @@ const Services = () => {
             <img src={service.image} alt={service.title} />
             <h3>{service.title}</h3>
             <p>{service.description}</p>
-            <button className="btn-primary">Learn More</button>
+            {/* Pass the correct service.id to the handler */}
+            <button className="btn-primary" onClick={() => handleLearnMore(service.id)}>
+              Learn More
+            </button>
           </div>
         ))}
       </div>
